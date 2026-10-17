@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+:root {
+  --anim-speed-multiplier: 1;
+  --anim-intensity-multiplier: 1;
+  --color-primary: #077AEF;
+  --color-primary-dark: #0056b3;
+  --color-primary-light: #e8f3ff;
+}
+
+/* Custom animation duration modifiers based on user settings */
+.anim-speed-slow {
+  --anim-speed-multiplier: 1.8;
+}
+
+.anim-speed-fast {
+  --anim-speed-multiplier: 0.5;
+}
+
+.anim-speed-off * {
+  animation-duration: 0.001s !important;
+  transition-duration: 0.001s !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

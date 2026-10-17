@@ -1,0 +1,6 @@
+{
+  "name": "FacePlant - Cosmetologist & Aesthetic Clinic Mumbai",
+  "description": "Expert Cosmetology, Aesthetics & General Healthcare Clinic in Mumbai led by Dr. Huma Shaikh. Providing advanced acne, hairfall, PRP, anti-aging, and skin treatments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
